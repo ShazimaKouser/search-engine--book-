@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.jfif" type="image/x-icon">
+    <title>library</title>
+    <style>
+        body {
+            background-color: #87cefaad;
+        }
+
+        div#item-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        img {
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-image: linear-gradient(to right, #b6e0efbd, #f1f6fe);
+            color: black;
+            width: 25%;
+            border: 1px solid grey;
+            border-radius: 20px;
+            padding: 11px;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #search-box {
+            padding: 10px 25px;
+            border-radius: 8px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Books</h1>
+        <label><input type="checkbox" class="category-filter" value="Fiction"> Fiction</label>
+        <label><input type="checkbox" class="category-filter" value="Non-Fiction">Non-Fiction</label>
+        <label><input type="checkbox" class="category-filter" value="Educational/Study Materials"> Educational</label>
+        <label><input type="checkbox" class="category-filter" value="Short-Story">Short Story</label>
+        <input type="search" id="search-box" placeholder="Search items...">
+    </div>
+    <div id="item-container">
+        <div class="item" data-category="Fiction">
+            <img src="1984_first_edition_cover (1).jpg" alt="">
+            <h2>Name : 1984</h2>
+            <h3>Author : George orwell</h3>
+            <p>Price: ₹ 1560.00</p>
+            <p>Rating: ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Fiction">
+            <img src="great.webp" alt="">
+            <h2>Name : The Great Gatsby</h2>
+            <h3>Author : F. Scott Fitzgerald</h3>
+            <p> Price: ₹ 1875.00</p>
+            <p>Rating: ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Fiction">
+            <img src="solute.webp" alt="">
+            <h2> Name : One Hundred Years of Solitude</h2>
+            <h3> Author : George orwell</h3>
+            <p> Price : ₹ 595.65</p>
+            <p> Rating : ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Short-Story">
+            <img src="tell.jfif" alt="">
+            <h2> Name : The Tell-Tale Heart</h2>
+            <h3> Author : Edgar Allan Poe</h3>
+            <p> Price : ₹ 350.00</p>
+            <p> Rating : ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Short-Story">
+            <img src="white.jpg" alt="">
+            <h2> Name : Hills Like White Elephants</h2>
+            <h3> Author : Ernest Hemingway</h3>
+            <p> Price : ₹ 186.77</p>
+            <p> Rating : ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Short-Story">
+            <img src="dead.webp" alt="">
+            <h2> Name : The Dead</h2>
+            <h3> Author : James Joyce</h3>
+            <p> Price : ₹ 200.00</p>
+            <p> Rating : ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Non-Fiction">
+            <img src="subtel.webp" alt="">
+            <h2> Name : The Subtle Art of Not Giving a Fck*</h2>
+            <h3> Author : Mark Manson</h3>
+            <p> Price : ₹ 164.00</p>
+            <p> Rating : 4.9 ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Non-Fiction">
+            <img src="ploto.webp" alt="">
+            <h2> Name : The Republic</h2>
+            <h3> Author : Plato</h3>
+            <p> Price : ₹965.00</p>
+            <p> Rating : 4.9 ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Non-Fiction">
+            <img src="red pine.webp" alt="">
+            <h2> Name : The Tao Te Ching</h2>
+            <h3> Author : Lao Tzu</h3>
+            <p> Price : ₹1551.00</p>
+            <p> Rating : 5.0 ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Educational/Study Materials">
+            <img src="art.webp" alt="">
+            <h2> Name : The Art of Computer Programming</h2>
+            <h3> Author : Donald Knuth</h3>
+            <p> Price : ₹4928.00</p>
+            <p> Rating : 5.0 ⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Educational/Study Materials">
+            <img src="english.webp" alt="">
+            <h2> Name : Grammar for High School Workbook </h2>
+            <h3> Author : Geoff Martz</h3>
+            <p> Price : ₹1600.00</p>
+            <p> Rating : 4.1⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="item" data-category="Educational/Study Materials">
+            <img src="revolution.webp" alt="">
+            <h2> Name : The Structure of Scientific Revolutions</h2>
+            <h3> Author : Thomas S. Kuhn</h3>
+            <p> Price : ₹1123.00</p>
+            <p> Rating : 5.0⭐⭐⭐⭐⭐</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('.category-filter');
+            const items = document.querySelectorAll('#item-container .item');
+            const searchBox = document.getElementById('search-box');
+            let selectedCount = 0;
+
+            function filterItems() {
+                const selectedCategories = Array.from(checkboxes)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value);
+                const searchTerm = searchBox.value.toLowerCase();
+
+                items.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+
+                    // Check if h2 element exists for title
+                    const h2Element = item.querySelector('h2');
+                    const itemTitle = h2Element ? h2Element.textContent.toLowerCase() : '';
+
+                    // Check if h3 or span element exists for author
+                    const authorElement = item.querySelector('h3');
+                    const itemAuthor = authorElement ? authorElement.textContent.toLowerCase() : '';
+
+                    // Check if p element exists for description
+                    const pElement = item.querySelector('p');
+                    const itemDescription = pElement ? pElement.textContent.toLowerCase() : '';
+
+                    const isCategoryMatch = selectedCategories.length === 0 || selectedCategories.includes(itemCategory);
+                    const isSearchMatch = itemTitle.includes(searchTerm) || itemDescription.includes(searchTerm) || itemAuthor.includes(searchTerm);
+
+                    // Display items that match both category and search term
+                    item.style.display = (isCategoryMatch && isSearchMatch) ? 'block' : 'none';
+                });
+            }
+
+            function handleCheckboxChange(event) {
+                if (event.target.checked) {
+                    selectedCount++;
+                } else {
+                    selectedCount--;
+                }
+
+                // If more than 2 checkboxes are selected, uncheck the last one
+                if (selectedCount > 2) {
+                    alert("You can only select up to 2 categories.");
+                    event.target.checked = false;
+                    selectedCount--;
+                }
+
+                filterItems();
+            }
+
+            function handleSearchInput() {
+                filterItems();
+            }
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', handleCheckboxChange);
+            });
+
+            searchBox.addEventListener('input', handleSearchInput);
+
+            // Initial filter based on checked checkboxes and search input
+            filterItems();
+        });
+
+
+    </script>
+</body>
+
+</html>
